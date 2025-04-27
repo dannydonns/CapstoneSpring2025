@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-net = cv2.dnn.readNet("/home/danny/BrilliantAICapstone/assets/yolov3-tiny.weights","/home/danny/BrilliantAICapstone/assets/yolov3-tiny.cfg")
+net = cv2.dnn.readNet("/home/danny/CapstoneSpring2025/assets/yolov3-tiny.weights","/home/danny/CapstoneSpring2025/assets/yolov3-tiny.cfg")
 # net = cv2.dnn.readNet("/home/danny/darknet/yolov3.weights","/home/danny/darknet/cfg/yolov3.cfg")
 
 classes = []

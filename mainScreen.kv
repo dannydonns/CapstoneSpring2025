@@ -1,0 +1,1470 @@
+########################################################################
+## MAIN SCREEN
+########################################################################
+<EditSliders>
+    orientation: "vertical"
+    spacing: "12dp"
+    size_hint_y: None
+    height: "120dp"
+ 
+    MDLabel:
+        text:'Squat Depth Min'
+        font_style: 'Subtitle1'
+        halign:'center'
+        padding: [5, 5]
+
+    MDSlider:
+        id: video_slider_1
+        size_hint_y: 0.05
+
+    MDLabel:
+        text:'Squat Depth Max'
+        font_style: 'Subtitle1'
+        halign:'center'
+        padding: [5, 5]
+
+    MDSlider:
+        id: video_slider_2
+        size_hint_y: 0.05
+
+<ChairPoseAngleScreen>
+
+    BoxLayout:
+        orientation: 'vertical'
+
+
+        BoxLayout:
+            orientation: 'horizontal'
+            size_hint_y: 0.05
+            padding: [0, 5]
+            spacing: 10
+
+            MDIconButton:
+                icon:'chevron-left'
+                pos_hint: {"center_x": .5, "center_y": .5}
+
+            MDLabel:
+                text:'Chair Pose Step 1'
+                font_style: 'H5'
+                halign:'center'
+                padding: [5, 5]
+                bold: True
+
+            MDIconButton:
+                icon:'chevron-right'
+                pos_hint: {"center_x": .5, "center_y": .5}
+
+        MDLabel:
+            text:'Stand tall with camera looking at your side'
+            font_style: 'H5'
+            halign:'center'
+            padding: [5, 5]
+            bold: True
+
+<ChairPoseFeetScreen>
+
+    BoxLayout:
+        orientation: 'vertical'
+
+        BoxLayout:
+            orientation: 'horizontal'
+            size_hint_y: 0.05
+            padding: [0, 5]
+            spacing: 10
+
+            MDIconButton:
+                icon:'chevron-left'
+                pos_hint: {"center_x": .5, "center_y": .5}
+
+            MDLabel:
+                text:'Chair Pose Analysis'
+                font_style: 'H5'
+                halign:'center'
+                padding: [5, 5]
+                bold: True
+
+            MDIconButton:
+                icon:'chevron-right'
+                pos_hint: {"center_x": .5, "center_y": .5}
+
+        MDLabel:
+            text:'Move feet close together'
+            font_style: 'H5'
+            halign:'center'
+            padding: [5, 5]
+            bold: True
+
+
+<ChairPoseArmScreen>
+
+    BoxLayout:
+        orientation: 'vertical'
+
+
+        BoxLayout:
+            orientation: 'horizontal'
+            size_hint_y: 0.05
+            padding: [0, 5]
+            spacing: 10
+
+            MDIconButton:
+                icon:'chevron-left'
+                pos_hint: {"center_x": .5, "center_y": .5}
+
+            MDLabel:
+                text:'Chair Pose Analysis'
+                font_style: 'H5'
+                halign:'center'
+                padding: [5, 5]
+                bold: True
+
+            MDIconButton:
+                icon:'chevron-right'
+                pos_hint: {"center_x": .5, "center_y": .5}
+
+        MDLabel:
+            text:'Raise arms together'
+            font_style: 'H5'
+            halign:'center'
+            padding: [5, 5]
+            bold: True
+
+<ChairPoseBendScreen>
+
+    BoxLayout:
+        orientation: 'vertical'
+
+
+        BoxLayout:
+            orientation: 'horizontal'
+            size_hint_y: 0.05
+            padding: [0, 5]
+            spacing: 10
+
+            MDIconButton:
+                icon:'chevron-left'
+                pos_hint: {"center_x": .5, "center_y": .5}
+
+            MDLabel:
+                text:'Chair Pose Analysis'
+                font_style: 'H5'
+                halign:'center'
+                padding: [5, 5]
+                bold: True
+
+            MDIconButton:
+                icon:'chevron-right'
+                pos_hint: {"center_x": .5, "center_y": .5}
+
+        MDLabel:
+            text:'Bend knees slightly'
+            font_style: 'H5'
+            halign:'center'
+            padding: [5, 5]
+            bold: True
+
+
+<ChairPoseScreen>
+
+    BoxLayout:
+        orientation: 'vertical'
+
+
+        BoxLayout:
+            orientation: 'horizontal'
+            size_hint_y: 0.05
+            padding: [0, 5]
+            spacing: 10
+
+            MDIconButton:
+                icon:'chevron-left'
+                pos_hint: {"center_x": .5, "center_y": .5}
+
+            MDLabel:
+                text:'Chair Pose Analysis'
+                font_style: 'H5'
+                halign:'center'
+                padding: [5, 5]
+                bold: True
+
+            MDIconButton:
+                icon:'chevron-right'
+                pos_hint: {"center_x": .5, "center_y": .5}
+
+        BoxLayout:
+            orientation: 'horizontal'
+            size_hint_y:.125
+            padding: [0, 5]
+            spacing: 10
+
+            MDCard:
+                radius: 30
+                size_hint: (0.25,1)
+                pos_hint: {'center_x': .5, 'center_y': .5}
+                padding: (20, 5)
+
+                BoxLayout:
+                    orientation: 'vertical'
+
+                    MDLabel:
+                        text:'Time'
+                        halign:'center'
+                        font_style: 'H6'
+                        #size_hint_y: 0.15
+
+                    MDLabel:
+                        text:'0'
+                        halign:'center'
+                        font_style: 'H6'
+                        #size_hint_y: 0.15
+
+            MDCard:
+                radius: 30
+                size_hint: (0.75,1)
+                pos_hint: {'center_x': .5, 'center_y': .5}
+                padding: (20, 5)
+
+                BoxLayout:
+                    orientation: 'vertical'
+
+                    MDLabel:
+                        text:'Squat Depth'
+                        font_style: 'H6'
+                        halign:'center'
+                        valign:'top'
+                        size_hint_y: 0.5
+                        padding: [5, 0]
+
+                    BoxLayout:
+                        orientation: 'horizontal'
+                        size_hint_y: 0.25
+                        padding: 5
+
+                        MDLabel:
+                            text:'Half'
+                            font_style: 'Subtitle2'
+                            halign:'left'
+
+                        MDLabel:
+                            text:'Perfect'
+                            font_style: 'Subtitle2'
+                            halign:'center'
+
+                        MDLabel:
+                            text:'Deep'
+                            font_style: 'Subtitle2'
+                            halign:'right'
+
+                    ProgressBar:
+                        id:squat_depth_progress_bar
+                        size_hint_y: 0.25
+
+        BoxLayout:
+            orientation: 'horizontal'
+            size_hint_y:.125
+            padding: [0, 5]
+            spacing: 10
+
+            MDCard:
+                radius: 30
+                #size_hint: (0.5,0.4)
+                pos_hint: {'center_x': .5, 'center_y': .5}
+                padding: (20, 5)
+
+                BoxLayout:
+                    orientation: 'vertical'
+
+                    MDLabel:
+                        text:'Arm Direction'
+                        font_style: 'H6'
+                        halign:'center'
+                        valign:'top'
+                        size_hint_y: 0.5
+                        padding: [5, 0]
+
+                    BoxLayout:
+                        orientation: 'horizontal'
+                        size_hint_y: 0.25
+                        padding: 5
+
+                        MDLabel:
+                            text:'Too Low'
+                            font_style: 'Subtitle2'
+                            halign:'left'
+
+                        MDLabel:
+                            text:'Correct'
+                            font_style: 'Subtitle2'
+                            halign:'right'
+
+                    ProgressBar:
+                        id: arm_direction_progress_bar
+                        size_hint_y: 0.25
+
+            MDCard:
+                radius: 30
+                #size_hint: (0.5,0.4)
+                pos_hint: {'center_x': .5, 'center_y': .5}
+                padding: (20, 5)
+
+                BoxLayout:
+                    orientation: 'vertical'
+
+                    MDLabel:
+                        text:'Knee Width'
+                        font_style: 'H6'
+                        halign:'center'
+                        valign:'top'
+                        size_hint_y: 0.5
+                        padding: [5, 0]
+
+                    BoxLayout:
+                        orientation: 'horizontal'
+                        size_hint_y: 0.25
+                        padding: 5
+
+                        MDLabel:
+                            text:'Correct'
+                            font_style: 'Subtitle2'
+                            halign:'left'
+
+                        MDLabel:
+                            text:'Too Far'
+                            font_style: 'Subtitle2'
+                            halign:'right'
+
+                    ProgressBar:
+                        id: knee_width_progress_bar
+                        size_hint_y: 0.25
+
+        BoxLayout:
+            orientation: 'horizontal'
+            size_hint_y:.125
+            padding: [0, 5]
+            spacing: 10
+
+            MDCard:
+                radius: 30
+                size_hint: (0.25,1)
+                pos_hint: {'center_x': .5, 'center_y': .5}
+                padding: (20, 5)
+
+                BoxLayout:
+                    orientation: 'vertical'
+
+                    MDLabel:
+                        text:'Time'
+                        halign:'center'
+                        font_style: 'H6'
+                        #size_hint_y: 0.15
+
+                    MDLabel:
+                        text:'0'
+                        halign:'center'
+                        font_style: 'H6'
+                        #size_hint_y: 0.15
+
+            MDCard:
+                radius: 30
+                size_hint: (0.75,1)
+                pos_hint: {'center_x': .5, 'center_y': .5}
+                padding: (20, 5)
+
+                BoxLayout:
+                    orientation: 'vertical'
+
+                    MDLabel:
+                        text:'Squat Depth'
+                        font_style: 'H6'
+                        halign:'center'
+                        valign:'top'
+                        size_hint_y: 0.5
+                        padding: [5, 0]
+
+                    BoxLayout:
+                        orientation: 'horizontal'
+                        size_hint_y: 0.25
+                        padding: 5
+
+                        MDLabel:
+                            text:'Half'
+                            font_style: 'Subtitle2'
+                            halign:'left'
+
+                        MDLabel:
+                            text:'Perfect'
+                            font_style: 'Subtitle2'
+                            halign:'center'
+
+                        MDLabel:
+                            text:'Deep'
+                            font_style: 'Subtitle2'
+                            halign:'right'
+
+                    ProgressBar:
+                        id:squat_depth_progress_bar
+                        size_hint_y: 0.25
+
+        BoxLayout:
+            orientation: 'horizontal'
+            size_hint_y:.125
+            padding: [0, 5]
+            spacing: 10
+
+            MDCard:
+                radius: 30
+                #size_hint: (0.5,0.4)
+                pos_hint: {'center_x': .5, 'center_y': .5}
+                padding: (20, 5)
+
+                BoxLayout:
+                    orientation: 'vertical'
+
+                    MDLabel:
+                        text:'Arm Direction'
+                        font_style: 'H6'
+                        halign:'center'
+                        valign:'top'
+                        size_hint_y: 0.5
+                        padding: [5, 0]
+
+                    BoxLayout:
+                        orientation: 'horizontal'
+                        size_hint_y: 0.25
+                        padding: 5
+
+                        MDLabel:
+                            text:'Too Low'
+                            font_style: 'Subtitle2'
+                            halign:'left'
+
+                        MDLabel:
+                            text:'Correct'
+                            font_style: 'Subtitle2'
+                            halign:'right'
+
+                    ProgressBar:
+                        id: arm_direction_progress_bar
+                        size_hint_y: 0.25
+
+            MDCard:
+                radius: 30
+                #size_hint: (0.5,0.4)
+                pos_hint: {'center_x': .5, 'center_y': .5}
+                padding: (20, 5)
+
+                BoxLayout:
+                    orientation: 'vertical'
+
+                    MDLabel:
+                        text:'Knee Width'
+                        font_style: 'H6'
+                        halign:'center'
+                        valign:'top'
+                        size_hint_y: 0.5
+                        padding: [5, 0]
+
+                    BoxLayout:
+                        orientation: 'horizontal'
+                        size_hint_y: 0.25
+                        padding: 5
+
+                        MDLabel:
+                            text:'Correct'
+                            font_style: 'Subtitle2'
+                            halign:'left'
+
+                        MDLabel:
+                            text:'Too Far'
+                            font_style: 'Subtitle2'
+                            halign:'right'
+
+                    ProgressBar:
+                        id: knee_width_progress_bar
+                        size_hint_y: 0.25
+
+<BowlScreen>:
+    BoxLayout:
+        orientation: 'vertical'
+        padding: dp(20)
+        spacing: dp(15)
+
+        BoxLayout:
+            orientation: 'horizontal'
+            size_hint_y: 0.1
+            spacing: dp(10)
+
+            MDIconButton:
+                icon: "chevron-left"
+                theme_text_color: "Custom"
+                text_color: 1, 1, 1, 1
+                pos_hint: {"center_x": 0, "center_y": 0.5}  # Left side
+                halign: 'left'
+
+            Widget:  # Spacer to push buttons apart
+
+            MDIconButton:
+                icon: "chevron-right"
+                theme_text_color: "Custom"
+                text_color: 1, 1, 1, 1
+                pos_hint: {"center_x": 1, "center_y": 0.5}  # Right side
+                halign: 'right'
+
+        Label:
+            text: "Bowl Screen"
+            font_size: "28sp"
+            bold: True
+            halign: "center"
+            size_hint_y: None
+            height: dp(40)
+            color: 1, 1, 1, 1
+
+        # Removed the extra white box here
+        
+
+        GridLayout:
+            cols: 3
+            spacing: dp(10)
+            padding: dp(10)
+            size_hint_y: 0.2
+
+            MDRaisedButton:
+                id: start_button
+                text: "Start"
+                font_size: "18sp"
+                size_hint_y: None
+                height: dp(50)
+                md_bg_color: (0.5, 0.5, 0.5, 1)  # Grey color
+                theme_text_color: "Custom"
+                text_color: 1, 1, 1, 1
+
+            MDRaisedButton:
+                id: stop_button
+                text: "Stop"
+                font_size: "18sp"
+                size_hint_y: None
+                height: dp(50)
+                md_bg_color: (0.5, 0.5, 0.5, 1)  # Grey color
+                theme_text_color: "Custom"
+                text_color: 1, 1, 1, 1
+
+            MDRaisedButton:
+                id: end_button
+                text: "End"
+                font_size: "18sp"
+                size_hint_y: None
+                height: dp(50)
+                md_bg_color: (0.5, 0.5, 0.5, 1)  # Grey color
+                theme_text_color: "Custom"
+                text_color: 1, 1, 1, 1
+            
+            MDRaisedButton:
+                id: reset_button
+                text: "Reset"
+                font_size: "18sp"
+                size_hint_y: None
+                height: dp(50)
+                md_bg_color: (0.5, 0.5, 0.5, 1)  # Grey color
+                theme_text_color: "Custom"
+                text_color: 1, 1, 1, 1
+
+            MDRaisedButton:
+                id: save_button
+                text: "Save"
+                font_size: "18sp"
+                size_hint_y: None
+                height: dp(50)
+                md_bg_color: (0.5, 0.5, 0.5, 1)  # Grey color
+                theme_text_color: "Custom"
+                text_color: 1, 1, 1, 1
+
+<SquatScreen>
+
+    BoxLayout:
+        orientation: 'vertical'
+
+        BoxLayout:
+            orientation: 'horizontal'
+            size_hint_y: 0.05
+            padding: [0, 5]
+            spacing: 10
+
+            MDIconButton:
+                icon:'chevron-left'
+                pos_hint: {"center_x": .5, "center_y": .5}
+
+            MDLabel:
+                text:'Squat Analysis'
+                font_style: 'H5'
+                halign:'center'
+                padding: [5, 5]
+                bold: True
+
+            MDIconButton:
+                icon:'chevron-right'
+                pos_hint: {"center_x": .5, "center_y": .5}
+
+        BoxLayout:
+            orientation: 'horizontal'
+            size_hint_y:.125
+            padding: [0, 5]
+            spacing: 10
+
+            MDCard:
+                radius: 30
+                size_hint: (0.25,1)
+                pos_hint: {'center_x': .5, 'center_y': .5}
+                padding: (20, 5)
+
+                BoxLayout:
+                    orientation: 'vertical'
+
+                    MDLabel:
+                        text:'Rep #'
+                        halign:'center'
+                        font_style: 'H6'
+                        #size_hint_y: 0.15
+
+                    MDLabel:
+                        id: squat_count
+                        text:'0'
+                        halign:'center'
+                        font_style: 'H6'
+                        #size_hint_y: 0.15
+
+            MDCard:
+                radius: 30
+                size_hint: (0.75,1)
+                pos_hint: {'center_x': .5, 'center_y': .5}
+                padding: (20, 5)
+
+                BoxLayout:
+                    orientation: 'vertical'
+
+                    BoxLayout:
+                        orientation: 'horizontal'
+                        size_hint_y: 0.5
+                        padding: 5
+
+                        MDIconButton:
+                            id: sd_eye
+                            icon:'eye-outline'
+                            on_press: app.eye_squat_depth()
+
+                        MDLabel:
+                            text:'Squat Depth'
+                            font_style: 'H6'
+                            halign:'center'
+                            valign:'top'
+                            padding: [5, 0]
+
+                        MDIconButton:
+                            icon:'cog'
+                            on_press: app.squat_depth_settings()
+
+                    BoxLayout:
+                        orientation: 'horizontal'
+                        size_hint_y: 0.25
+                        padding: 5
+
+                        MDLabel:
+                            text:'Half'
+                            font_style: 'Subtitle2'
+                            halign:'left'
+
+                        MDLabel:
+                            text:'Parallel'
+                            font_style: 'Subtitle2'
+                            halign:'center'
+
+                        MDLabel:
+                            text:'Deep'
+                            font_style: 'Subtitle2'
+                            halign:'right'
+
+                    ProgressBar:
+                        id: squat_progress_bar
+                        size_hint_y: 0.25
+
+        BoxLayout:
+            orientation: 'horizontal'
+            size_hint_y:.125
+            padding: [0, 5]
+            spacing: 10
+
+            MDCard:
+                radius: 30
+                #size_hint: (0.5,0.4)
+                pos_hint: {'center_x': .5, 'center_y': .5}
+                padding: (20, 5)
+
+                BoxLayout:
+                    orientation: 'vertical'
+
+                    BoxLayout:
+                        orientation: 'horizontal'
+                        size_hint_y: 0.5
+                        padding: 5
+
+                        MDIconButton:
+                            icon:'eye' 
+
+                        MDLabel:
+                            text:'Back Angle'
+                            font_style: 'H6'
+                            halign:'center'
+                            valign:'top'
+                            padding: [5, 0]
+
+                        MDIconButton:
+                            icon:'cog' 
+
+                    BoxLayout:
+                        orientation: 'horizontal'
+                        size_hint_y: 0.25
+                        padding: 5
+
+                        MDLabel:
+                            text:'Upright'
+                            font_style: 'Subtitle2'
+                            halign:'left'
+
+                        MDLabel:
+                            text:'Forward'
+                            font_style: 'Subtitle2'
+                            halign:'right'
+
+                    ProgressBar:
+                        id: back_angle_progress_bar
+                        size_hint_y: 0.25
+
+            MDCard:
+                radius: 30
+                #size_hint: (0.5,0.4)
+                pos_hint: {'center_x': .5, 'center_y': .5}
+                padding: (20, 5)
+
+                BoxLayout:
+                    orientation: 'vertical'
+
+                    BoxLayout:
+                        orientation: 'horizontal'
+                        size_hint_y: 0.5
+                        padding: 5
+
+                        MDIconButton:
+                            icon:'eye' 
+
+                        MDLabel:
+                            text:'Head Direction'
+                            font_style: 'H6'
+                            halign:'center'
+                            valign:'top'
+                            padding: [5, 0]
+
+                        MDIconButton:
+                            icon:'cog' 
+                    BoxLayout:
+                        orientation: 'horizontal'
+                        size_hint_y: 0.25
+                        padding: 5
+
+                        MDLabel:
+                            text:'Up'
+                            font_style: 'Subtitle2'
+                            halign:'left'
+
+                        MDLabel:
+                            text:'Center'
+                            font_style: 'Subtitle2'
+                            halign:'center'
+
+
+                        MDLabel:
+                            text:'Down'
+                            font_style: 'Subtitle2'
+                            halign:'right'
+
+                    ProgressBar:
+                        id:head_angle_progress_bar
+                        size_hint_y: 0.25
+
+        BoxLayout:
+            orientation: 'horizontal'
+            size_hint_y:.125
+            padding: [0, 5]
+            spacing: 10
+
+            MDCard:
+                radius: 30
+                #size_hint: (0.5,0.4)
+                pos_hint: {'center_x': .5, 'center_y': .5}
+                padding: (20, 5)
+
+                BoxLayout:
+                    orientation: 'vertical'
+
+                    BoxLayout:
+                        orientation: 'horizontal'
+                        size_hint_y: 0.5
+                        padding: 5
+
+                        MDIconButton:
+                            icon:'eye'
+
+                        MDLabel:
+                            text:'Knee Width'
+                            font_style: 'H6'
+                            halign:'center'
+                            valign:'top'
+                            padding: [5, 0]
+
+                        MDIconButton:
+                            icon:'cog' 
+
+                    BoxLayout:
+                        orientation: 'horizontal'
+                        size_hint_y: 0.25
+                        padding: 5
+
+                        MDLabel:
+                            text:'Close'
+                            font_style: 'Subtitle2'
+                            halign:'left'
+
+                        MDLabel:
+                            text:'Wide'
+                            font_style: 'Subtitle2'
+                            halign:'right'
+
+                    ProgressBar:
+                        id: knee_width_progress_bar
+                        size_hint_y: 0.25
+
+            MDCard:
+                radius: 30
+                #size_hint: (0.5,0.4)
+                pos_hint: {'center_x': .5, 'center_y': .5}
+                padding: (20, 5)
+
+                BoxLayout:
+                    orientation: 'vertical'
+
+                    BoxLayout:
+                        orientation: 'horizontal'
+                        size_hint_y: 0.5
+                        padding: 5
+
+                        MDIconButton:
+                            icon:'eye' 
+
+                        MDLabel:
+                            text:'Arm Angle'
+                            font_style: 'H6'
+                            halign:'center'
+                            valign:'top'
+                            padding: [5, 0]
+
+                        MDIconButton:
+                            icon:'cog' 
+
+                    BoxLayout:
+                        orientation: 'horizontal'
+                        size_hint_y: 0.25
+                        padding: 5
+
+                        MDLabel:
+                            text:'Lowered'
+                            font_style: 'Subtitle2'
+                            halign:'left'
+
+                        MDLabel:
+                            text:'Raised'
+                            font_style: 'Subtitle2'
+                            halign:'right'
+
+                    ProgressBar:
+                        id: arm_angle_progress_bar
+                        size_hint_y: 0.25
+
+        BoxLayout:
+            orientation: 'horizontal'
+            size_hint_y:.125
+            padding: [0, 5]
+            spacing: 10
+
+            MDCard:
+                radius: 30
+                size_hint: (0.25,1)
+                pos_hint: {'center_x': .5, 'center_y': .5}
+                padding: (20, 5)
+                canvas:
+                    Color:
+                        rgb: 1, 1, 0
+
+                BoxLayout:
+                    orientation: 'vertical'
+
+                    MDLabel:
+                        text:'Squat Analysis'
+                        halign:'center'
+                        font_style: 'H6'
+                        bold: True
+                        #size_hint_y: 0.15
+
+                    MDLabel:
+                        text:'N/A'
+                        halign:'center'
+                        font_style: 'H6'
+                        #size_hint_y: 0.15
+
+
+<ExerciseCarousel>
+
+    SquatScreen:
+        id:squatscreen
+
+    ChairPoseScreen:
+        id:mainscreen
+    
+    BowlScreen:
+        id:bowlscreen
+    
+
+<LiveExerciseScreenManager>
+
+    MDScreen:
+        id:live_exercise_list
+        MDCarousel:
+            id:live_exercise_carousel
+            BowlScreen
+                id:live_bowling_screen
+            SquatScreen:
+                id:live_squat_screen
+            ChairPoseScreen:
+                id:live_chair_pose_screen
+            
+
+    MDScreen:
+        id:live_chair_pose
+        BoxLayout:
+            orientation: 'vertical'
+            MDLabel:
+                text:'Chair Pose Tutorial'
+                halign:'center'
+                font_style: 'H6'
+                size_hint_y: 0.15
+            ScreenManager:
+                id: live_chair_pose_manager
+                ChairPoseAngleScreen:
+                    id:cpangle
+                    name:'cpangle'
+                ChairPoseFeetScreen:
+                    id:cpfeet
+                    name:'cpfeet'
+                ChairPoseArmScreen:
+                    id:cparm
+                    name:'cparm'
+                ChairPoseBendScreen:
+                    id:cpbend
+                    name:'cpbend'
+
+
+
+<LivePoseDetect>
+
+<LiveScreen>
+    name: 'live_screen'
+    BoxLayout:
+        orientation: 'vertical'
+        padding: 10
+
+        LivePoseDetect:
+            id: live_pose_detect
+            size_hint_y: 0.5
+
+        LiveExerciseScreenManager:
+            id:live_exercise_screen_manager
+            size_hint_y: 0.5
+        
+
+<VideoScreen>
+    name: 'video_screen'
+    BoxLayout:
+        orientation: 'vertical'
+        padding: 10
+
+        VideoPoseDetect:
+            id: video_pose_detect
+            size_hint_y: 0.5
+
+        MDSlider:
+            id: video_slider
+            size_hint_y: 0.05
+
+        BoxLayout:
+            orientation: 'horizontal'
+            size_hint: (1,0.08)
+            pos_hint: {'center_x': .5, 'center_y': .5}
+            padding: [0, 5]
+            spacing: 25
+
+
+            MDFloatingActionButton:
+                text: 'Home'
+                id: folder_button
+                icon: 'folder'
+                pos_hint: {'center_x': .5, 'center_y': .5}
+            MDFloatingActionButton:
+                text: 'Live'
+                id: restart_button
+                icon: 'restart'
+                pos_hint: {'center_x': .5, 'center_y': .5}
+            MDFloatingActionButton:
+                text: 'Video'
+                id: play_pause_button
+                icon: 'play-pause'
+                pos_hint: {'center_x': .5, 'center_y': .5}
+            MDFloatingActionButton:
+                text: 'User'
+                id: fast_forward_button
+                icon: 'fast-forward-5'
+                pos_hint: {'center_x': .5, 'center_y': .5}
+
+
+        MDCarousel:
+            id:exercisecarousel
+            BowlScreen:
+                id:bowlscreen
+            SquatScreen:
+                id:squatscreen
+            ChairPoseScreen:
+                id:chairposescreen
+
+
+
+
+
+<HomeScreen>
+    name: 'home_screen'
+    BoxLayout:
+        orientation: 'vertical'
+        padding: 10
+        
+        MDCard:
+            radius: 50
+            size_hint: (1,0.4)
+            pos_hint: {'center_x': .5, 'center_y': .5}
+
+            FloatLayout:
+                #orientation: 'vertical'
+                #padding: 15
+                #spacing: 15
+            
+
+
+                FitImage:
+                    source: 'assets/LungeVideo.gif'
+                    radius: [30, 30, 30, 30]
+                    pos_hint: {'center_x' : 0.5, 'center_y': 0.5}
+
+                MDLabel:
+                    text:'Welcome to APT'
+                    bold: True
+                    font_style:'H4'
+                    halign: 'center'
+                    pos_hint: {'center_x' : 0.5, 'center_y': 0.5}
+
+        BoxLayout:
+            orientation: 'vertical'
+            size_hint: (1,0.6)
+
+            MDLabel:
+                text: 'Choose your exercises:'
+                font_style: 'H5'
+                bold: True
+                size_hint: (1,0.1)
+                pos_hint: {'x': 0.02}
+
+       
+            MDLabel:
+                text: 'Physical Training'
+                font_style: 'H6'
+                bold: True
+                size_hint: (1,0.075)
+                pos_hint: {'x': 0.02, 'center_y': 1.5}
+
+            ScrollView:
+                do_scroll_y: False
+                do_scroll_x: True
+                size_hint: (1,0.4)
+
+                MDBoxLayout:
+                    orientation: 'horizontal'
+                    spacing: 10
+                    size_hint: (None, 1)
+                    size: (1230, 0)
+                    
+
+                    MDCard:
+                        radius: 30
+                        size_hint: (1,1)
+
+                        BoxLayout:
+                            orientation: 'vertical'
+
+                            FitImage:
+                                source:'assets/bicep_card.jpeg'
+                                radius: [30, 30, 0, 0]
+                                
+
+                            BoxLayout:
+                                orientation: 'horizontal'
+                                size_hint_y: 0.3
+                                padding: 20
+
+                                MDLabel:
+                                    text:'Bicep Curl'
+                                    font_style: 'Subtitle2'
+                                    halign:'left'
+                                    size_hint: (0.9, 1)
+
+                                CheckBox:
+                                    size_hint: (0.1, 1)
+
+                    MDCard:
+                        radius: 30
+                        size_hint: (1,1)
+
+                        BoxLayout:
+                            orientation: 'vertical'
+
+                            FitImage:
+                                source:'assets/jj_card.jpg'
+                                radius: [30, 30, 0, 0]
+
+                            BoxLayout:
+                                orientation: 'horizontal'
+                                size_hint_y: 0.3
+                                padding: 20
+
+                                MDLabel:
+                                    text:'Jumping Jack'
+                                    font_style: 'Subtitle2'
+                                    halign:'left'
+
+                                CheckBox:
+                                    size_hint: (0.1, 1)
+
+                    MDCard:
+                        radius: 30
+                        size_hint: (1,1)
+
+                        BoxLayout:
+                            orientation: 'vertical'
+
+                            FitImage:
+                                source:'assets/squat_card.jpg'
+                                radius: [30, 30, 0, 0]
+
+                            BoxLayout:
+                                orientation: 'horizontal'
+                                size_hint_y: 0.3
+                                padding: 20
+
+                                MDLabel:
+                                    text:'Squat'
+                                    font_style: 'Subtitle2'
+                                    halign:'left'
+
+                                CheckBox:
+                                    size_hint: (0.1, 1)
+
+                    MDCard:
+                        radius: 30
+                        size_hint: (1,1)
+
+                        BoxLayout:
+                            orientation: 'vertical'
+
+                            FitImage:
+                                source:'assets/squat_card.jpg'
+                                radius: [30, 30, 0, 0]
+
+                            BoxLayout:
+                                orientation: 'horizontal'
+                                size_hint_y: 0.3
+                                padding: 20
+
+                                MDLabel:
+                                    text:'Half'
+                                    font_style: 'Subtitle2'
+                                    halign:'left'
+
+                                CheckBox:
+                                    size_hint: (0.1, 1)
+
+
+
+                    #ProgressBar:
+                    #    id: squat_progress_bar
+                    #    size_hint_y: 0.25
+
+            MDLabel:
+                text: 'Yoga Poses'
+                font_style: 'H6'
+                bold: True
+                size_hint: (1,0.075)
+                pos_hint: {'x': 0.02}
+
+            ScrollView:
+                do_scroll_y: False
+                do_scroll_x: True
+                size_hint: (1,0.4)
+
+                MDBoxLayout:
+                    orientation: 'horizontal'
+                    spacing: 10
+                    size_hint: (None, 1)
+                    size: (1230, 0)
+
+                    MDCard:
+                        radius: 30
+                        size_hint: (1,1)
+
+                        BoxLayout:
+                            orientation: 'vertical'
+
+                            FitImage:
+                                source:'assets/tree_card.jpg'
+                                radius: [30, 30, 0, 0]
+                                
+
+                            BoxLayout:
+                                orientation: 'horizontal'
+                                size_hint_y: 0.3
+                                padding: 20
+
+                                MDLabel:
+                                    text:'Tree'
+                                    font_style: 'Subtitle2'
+                                    halign:'left'
+                                    size_hint: (0.9, 1)
+
+                                CheckBox:
+                                    size_hint: (0.1, 1)
+
+                    MDCard:
+                        radius: 30
+                        size_hint: (1,1)
+
+                        BoxLayout:
+                            orientation: 'vertical'
+
+                            FitImage:
+                                source:'assets/warrioriii_card.jpg'
+                                radius: [30, 30, 0, 0]
+                                
+
+                            BoxLayout:
+                                orientation: 'horizontal'
+                                size_hint_y: 0.3
+                                padding: 20
+
+                                MDLabel:
+                                    text:'Warrior III'
+                                    font_style: 'Subtitle2'
+                                    halign:'left'
+                                    size_hint: (0.9, 1)
+
+                                CheckBox:
+                                    size_hint: (0.1, 1)
+
+                    MDCard:
+                        radius: 30
+                        size_hint: (1,1)
+
+                        BoxLayout:
+                            orientation: 'vertical'
+
+                            FitImage:
+                                source:'assets/bicep_card.jpeg'
+                                radius: [30, 30, 0, 0]
+                                
+
+                            BoxLayout:
+                                orientation: 'horizontal'
+                                size_hint_y: 0.3
+                                padding: 20
+
+                                MDLabel:
+                                    text:'Bicep Curl'
+                                    font_style: 'Subtitle2'
+                                    halign:'left'
+                                    size_hint: (0.9, 1)
+
+                                CheckBox:
+                                    size_hint: (0.1, 1)
+
+                    MDCard:
+                        radius: 30
+                        size_hint: (1,1)
+
+                        BoxLayout:
+                            orientation: 'vertical'
+
+                            FitImage:
+                                source:'assets/bicep_card.jpeg'
+                                radius: [30, 30, 0, 0]
+                                
+
+                            BoxLayout:
+                                orientation: 'horizontal'
+                                size_hint_y: 0.3
+                                padding: 20
+
+                                MDLabel:
+                                    text:'Bicep Curl'
+                                    font_style: 'Subtitle2'
+                                    halign:'left'
+                                    size_hint: (0.9, 1)
+
+                                CheckBox:
+                                    size_hint: (0.1, 1)
+
+            #ScrollView:
+            #    do_scroll_y: True
+            #    do_scroll_x: False
+               
+        
+                #MDBoxLayout:
+                #    id: exercise_view
+                #    orientation: "vertical"
+                #    cols: 1
+                #    adaptive_height: True
+
+
+<UserScreen>
+    name: 'user_screen'
+    BoxLayout:
+        orientation: 'vertical'
+        
+        Label:
+            text:'User Screen'
+            align: 'center'
+    
+<MainScreen>
+    # Set screen name
+    name: 'MainScreen'
+    
+
+    BoxLayout:
+        orientation: 'vertical'
+ 
+        BoxLayout:
+            orientation: 'horizontal'
+            padding: [20,5]
+            size_hint_y: 0.07
+
+            MDLabel:
+                text:'Hi, Theus!'
+                bold: True
+                font_style:'H5'
+                halign: 'left'
+                pos_hint: {'left': 10}
+                size_hint_x: 3
+
+            Image:
+                source: 'assets/APTLogoWhite.png'
+                keep_ratio: True
+
+            
+        
+
+        MDBottomNavigation:
+            id:main_screen_nav
+
+            MDBottomNavigationItem:
+                name:'home'
+                text:'Home'
+                icon:'home'
+                HomeScreen:
+                    id:homescreen
+            MDBottomNavigationItem:
+                name:'live'
+                text:'Live'
+                icon:'video-box'
+                LiveScreen:
+                    id:livescreen
+            MDBottomNavigationItem:
+                name:'video'
+                text:'Videos'
+                icon:'play-box-multiple'
+                VideoScreen:
+                    id:videoscreen
+            MDBottomNavigationItem:
+                name:'user'
+                text:'User'
+                icon:'account-circle'
+                UserScreen:
+
+<SplashScreen>:
+    # Set sc screen name
+    name: "SplashScreen"
+    
+    # Start the progress bar animation when the screen is active
+    MDBoxLayout:
+        #md_bg_color: 0.1, 0.1, 0.1, 1
+        orientation: 'vertical'
+        padding: [0,300]
+            
+        # Add App Image
+        Image:
+            source:'assets/APTLogoWhite.png'
+            allow_stretch: True
+            pos_hint: {'center_x': 0.5, 'center_y': 0.1}
+            size_hint: (0.8, 1)
+
+    
+        # Add progress bar
+        MDProgressBar:
+            pos_hint: {'center_x': 0.5, 'center_y': 0.9}
+            size_hint: (0.7, 0.1)
+            # Set progress id
+            id: progress
+            # Set orientation
+            orientation: "horizontal"
+            # Set progress type
+            type: "indeterminate"
+            # Progress duration
+            running_duration: 1
+            # Catching duration
+            catching_duration: 1
+
+        MDLabel:
+            text:'Powered By'
+            font_style:'H6'
+            # Horizontal text alignment
+            halign: "center"
+            text_color: 1, 1, 1, 1
+            pos_hint: {'center_x': 0.5, 'center_y': 0.2}
+            size_hint: (0.7, 0.1)
+
+
+        # Add App Image
+        Image:
+            source:'assets/BrilliantAILogoWhite.png'
+            allow_stretch: True
+            size_hint: (0.4, 0.5)
+            pos_hint: {'center_x': 0.5, 'center_y': 0.17}
+
+ScreenManager:
+    id: screen_manager
+
+    SplashScreen:
+        id: splashscreen
+
+    MainScreen:
+        id:mainscreen
+
+    
